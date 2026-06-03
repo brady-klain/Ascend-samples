@@ -689,6 +689,19 @@
     display: block;
   }
 }
+
+
+@media (max-width: 768px) {
+  .suite-floor-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  .suite-includes-banner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -884,7 +897,7 @@
         <div style="flex:1;height:1px;background:rgba(0,0,0,0.1);"></div>
         <span style="font-size:0.75rem;color:var(--text-muted);font-family:'Barlow Condensed',sans-serif;letter-spacing:0.1em;">Ground level · Easy client access</span>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+      <div class="suite-floor-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
         
         <div style="background:#fff;border:1px solid rgba(0,0,0,0.09);padding:2rem;position:relative;overflow:hidden;transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 8px 32px rgba(26,111,196,0.15)'" onmouseout="this.style.boxShadow=''">
           <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--blue-bright),transparent);"></div>
@@ -927,7 +940,7 @@
         <div style="flex:1;height:1px;background:rgba(0,0,0,0.1);"></div>
         <span style="font-size:0.75rem;color:var(--text-muted);font-family:'Barlow Condensed',sans-serif;letter-spacing:0.1em;">Upper level · Quiet &amp; elevated</span>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+      <div class="suite-floor-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
         
         <div style="background:#fff;border:1px solid rgba(0,0,0,0.09);padding:2rem;position:relative;overflow:hidden;transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 8px 32px rgba(26,111,196,0.15)'" onmouseout="this.style.boxShadow=''">
           <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--blue-bright),transparent);"></div>
@@ -964,7 +977,7 @@
       </div>
     </div>
 
-    <div class="reveal" style="margin-top:2.5rem;padding:1.8rem 2.2rem;background:#eef4fb;border-left:3px solid var(--blue);display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem;">
+    <div class="reveal" style="margin-top:2.5rem;padding:1.8rem 2.2rem;background:#eef4fb;border-left:3px solid var(--blue);display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem;" class="suite-includes-banner">
       <div style="flex:1;min-width:200px;">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:0.08em;color:var(--text-dark);">Every Suite Includes</div>
         <div style="font-size:0.8rem;color:var(--text-muted);">One flat rate. No hidden fees.</div>
